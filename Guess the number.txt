@@ -1,0 +1,19 @@
+ans = 18
+num_of_guess=1
+name = input("please Enter your name : ").capitalize()
+print("welcome to the Guess the Number Game ",name)
+print("Number of attempt is only 6")
+while(num_of_guess<=6):
+    ans = int(18)
+    user = int(input("Guess the Number :  "))
+    if user>ans:
+        print("Your answer is greater than Given Number")
+    elif user<ans:
+        print("Your answer is less than the Given number ")
+    else:
+        print("Wow Great your guessing power is Great,\nYou Win",name)
+        break
+    print("Only",6-num_of_guess,"attempts is remaining\n")
+    num_of_guess=num_of_guess+1
+if num_of_guess>6:
+    print("Better Luck Next Time")
